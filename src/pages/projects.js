@@ -20,7 +20,7 @@ const AboutPage = () => {
             <StaticImage
               className={reSize}
               alt="image-avater"
-              src="../images/twitter.png"
+              src="../images/github.png"
             />
           </div>
           <div className={box}>
@@ -43,7 +43,7 @@ const AboutPage = () => {
             <StaticImage
               className={reSize}
               alt="image-avater"
-              src="../images/linkedin.png"
+              src="../images/weatherApp.png"
             />
           </div>
           <div className={box}>
@@ -68,7 +68,7 @@ const AboutPage = () => {
             <StaticImage
               className={reSize}
               alt="image-avater"
-              src="../images/twitter.png"
+              src="../images/loveApp.png"
             />
           </div>
           <div className={box}>
@@ -91,7 +91,7 @@ const AboutPage = () => {
             <StaticImage
               className={reSize}
               alt="image-avater"
-              src="../images/linkedin.png"
+              src="../images/qouteBank.png"
             />
           </div>
           <div className={box}>
