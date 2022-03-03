@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap');
+
+.blogTitle {
+    color: #102738;
+}
+
+.blogDate {
+    color: #1C0A00;
+    font-weight: 700;
+    font-family: 'Fredoka',
+    sans-serif;
+}
+
+.blogImg {
+    max-width: 50%;
+}
+
+.blogImgDiv {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.photoCreditDiv {
+    text-align: center;
+}
+
+.bodyText {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .blogImg {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .blogImg {
+        max-width: 100%;
+    }
+}
