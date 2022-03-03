@@ -1,16 +1,35 @@
-import * as React from "react";
+import React from "react";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
+import { motion } from "framer-motion";
+import { happyExploring, staticImage } from "../components/layout.module.css";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
-      <p>I'm making this by following the Gatsby Tutorial.</p>
-      <StaticImage
-        alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-        src="../images/icon.png"
-      />
-    </Layout>
+    <>
+      <Layout name="Hi, I'm Salihu K" pageTitle="A Web Developer">
+        <p className={happyExploring}>Happy exploring!</p>
+        <motion.div
+          animate={{
+            scale: [1, 0, 0, 0, 0, 0, 1],
+            rotate: [0, 0, 360, 0],
+          }}
+          transition={{
+            duration: 15,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.8, 1],
+            repeat: Infinity,
+            repeatDelay: 1,
+          }}
+        >
+          <StaticImage
+            className={staticImage}
+            alt="profile-image"
+            src="https://pbs.twimg.com/profile_images/1224069562066403328/9ACIy--Z_400x400.jpg"
+          />
+        </motion.div>
+      </Layout>
+    </>
   );
 };
 
