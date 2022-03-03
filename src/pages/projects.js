@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
 
-
 import {
   sectionA,
   sectionB,
@@ -76,7 +75,8 @@ const AboutPage = () => {
           <div className={box}>
             <h1>Love App</h1>
             <p>
-              This is a web App that Predict's the possible affection couples might have.
+              This is a web App that Predict's the possible affection couples
+              might have.
             </p>
             <a
               href="https://sk-love.netlify.app/"
@@ -98,7 +98,8 @@ const AboutPage = () => {
           <div className={box}>
             <h1>Qoute Bank App</h1>
             <p>
-              Web app that is full of generated qoutes from an api call with just a button click
+              Web app that is full of generated qoutes from an api call with
+              just a button click
             </p>
             <a
               href="https://www.linkedin.com/in/salihu-abubakar-177086201/"
