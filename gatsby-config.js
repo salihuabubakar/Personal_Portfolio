@@ -7,7 +7,9 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
-      resolve: "gatsby-source-filesystem, gatsby-plugin-manifest",
+      resolve: [
+        "gatsby-source-filesystem",
+        "gatsby-plugin-manifest"],
       options: {
         name: `blog`,
         path: `${__dirname}/blog`,
