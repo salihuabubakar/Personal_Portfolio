@@ -1,53 +1,63 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import {
-  container,
   heading,
   navLinks,
-  navLinkItem,
+  mainContent,
   navLinkText,
-  siteTitle
-} from './layout.module.css'
+  siteTitle,
+  navLinkList,
+} from "./layout.module.css";
 
-const Layout = ({ pageTitle, children }) => {
-    const data = useStaticQuery(graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
+const Layout = ({ pageTitle, children, name }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
         }
       }
-    `);
+    }
+  `);
   return (
-    <div className={container}>
-      <title>
-        {pageTitle} | {data.site.siteMetadata.title}
-      </title>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+    <div>
       <nav>
         <ul className={navLinks}>
-          <li className={navLinkItem}>
+          <li className={navLinkList}>
             <Link to="/" className={navLinkText}>
               Home
             </Link>
           </li>
-          <li className={navLinkItem}>
+          <li className={navLinkList}>
             <Link to="/about" className={navLinkText}>
-              About
+              About Me
             </Link>
           </li>
-          <li className={navLinkItem}>
+          <li className={navLinkList}>
+            <Link to="/contact" className={navLinkText}>
+              Contact Me
+            </Link>
+          </li>
+          <li className={navLinkList}>
+            <Link to="/projects" className={navLinkText}>
+              Projects
+            </Link>
+          </li>
+          <li className={navLinkList}>
             <Link to="/blog" className={navLinkText}>
               Blog
             </Link>
           </li>
         </ul>
       </nav>
-      <main>
-        <h1 className={heading}>{pageTitle}</h1>
-        {children}
-      </main>
+      <div className={mainContent}>
+        <title>{pageTitle} | PortFolio</title>
+        <header className={siteTitle}>{name}</header>
+        <main>
+          <h1 className={heading}>{pageTitle}</h1>
+          {children}
+        </main>
+      </div>
     </div>
   );
 };

@@ -1,11 +1,196 @@
-.container {
-    margin: auto;
-    max-width: 500px;
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+body {
     font-family: sans-serif;
+    background-color: #fff;
+    background-image: url("../images/bg.png");
 }
 
+.span {}
+
+.icon {
+    background-color: #000;
+    background-image: url("../images/bg.png");
+    margin: 2%;
+    padding: 2%;
+    padding-left: 5%;
+    border-radius: 50px;
+    max-width: 40%;
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    color: #fff;
+}
+
+.contactAnimate {
+    display: flex;
+}
+
+.sectionA,
+.sectionB {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 20%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    background-image: url("../images/bg.png");
+    color: #fff;
+    border-radius: 5px;
+}
+
+.card:hover {
+    background-color: #fff;
+    border: 2px solid #353f46;
+    color: #000;
+}
+
+.card a {
+    text-decoration: none;
+    text-align: center;
+    background-color: #fff;
+    padding: 2%;
+    border-radius: 05px;
+    font-weight: 900;
+    color: #353f46;
+}
+
+.card a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.imgBox {
+    padding: 1%;
+}
+
+
+.cardImgSize {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+
+.contactAnimateIcon {
+    background-color: #000;
+    background-image: url("../images/bg.png");
+    margin: 2%;
+    padding: 2%;
+    padding-left: 5%;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.contactAnimateIcon:hover {
+    background-color: #fff;
+    border: 2px solid #353f46;
+}
+
+.contactAnimateIcon span {
+    padding-right: 5%;
+}
+
+.contactAnimateIcon span .reSize {
+    max-width: 70%;
+}
+
+.contactAnimateIcon span .reSize:hover {
+    max-width: 100%;
+}
+
+.contactAnimateIcon a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    color: #fff;
+}
+
+.about {
+    margin-top: 60%;
+}
+
+.mainContent {
+    margin: auto;
+    max-width: 90%;
+}
+
+.aboutMeDiv {
+    display: flex;
+}
+
+.aboutMeText {
+    font-family: 'Hubballi',
+        cursive;
+    font-size: 1.7rem;
+}
+
+.greeting {
+    color: #353f46;
+    font-family: 'Hubballi',
+        cursive;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+}
+
+ul {
+    justify-content: center;
+}
+
+.staticImage {
+    border-radius: 50%;
+    max-width: 20%;
+    border: 2px solid #353f46;
+}
+
+.meImg {
+    max-width: 40%;
+    border-radius: 20px;
+    margin-right: 1%;
+    border: 2px dotted #353f46;
+}
+
+.navLinkList {
+    background-color: #000;
+    background-image: url("../images/bg.png");
+    color: white;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 50px;
+}
+
+.navLinkList:hover {
+    background-color: #fff;
+    border: 2px solid #353f46;
+}
+
+
 .heading {
-    color: rebeccapurple;
+    color: #353f46;
+}
+
+.happyExploring {
+    font-size: 1.5rem;
+    color: #353f46;
 }
 
 .nav-links {
@@ -14,17 +199,216 @@
     padding-left: 0;
 }
 
-.nav-link-item {
-    padding-right: 2rem;
-}
 
 .nav-link-text {
-    color: black;
+    color: white;
+    font-weight: 900;
 }
+
+.nav-link-text:hover {
+    color: #000;
+}
+
 
 .site-title {
     font-size: 3rem;
-    color: gray;
+    color: #393E41;
     font-weight: 700;
-    margin: 3rem 0;
+
+    font-size: 4rem;
+
+    animation: site-title 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes site-title {
+    from {
+        text-shadow: 0 0 05px #fff,
+            0 0 10px #fff,
+            0 015px #72646b,
+            0 0 40px #393E41,
+            0 0 20px #eaebe6,
+            0 0 30px #2c1d25,
+            0 0 20px #e6d700;
+    }
+
+    to {
+        text-shadow: 0 0 10px #fff,
+            0 0 15px #1d0511,
+            0 0 20px #030002,
+            0 0 50px #c0b3b9,
+            0 0 60px #af97a3,
+            0 0 70px #d5e2e4,
+            0 0 80px #d5e2e4;
+    }
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Madia Queries */
+
+@media only screen and (max-width: 768px) {
+
+    /* Index page configuration */
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+    }
+
+    ul {
+        justify-content: center;
+    }
+
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .navLinkList {
+        background-color: #000;
+        background-image: url("../images/bg.png");
+        color: white;
+        padding: 2%;
+        margin: 1%;
+        width: 50%;
+        border-radius: 50px;
+    }
+
+    .navLinkList:hover {
+        background-color: #fff;
+        border: 2px solid #353f46;
+    }
+
+
+    .nav-link-text {
+        color: white;
+        font-weight: 900;
+    }
+
+    .site-title {
+        font-size: 2.5rem;
+    }
+
+    .staticImage {
+        border-radius: 50%;
+        max-width: 40%;
+        border: 2px solid #353f46;
+    }
+
+    .contactAnimate {
+        display: flex;
+    }
+
+    .contactAnimateIcon {
+        background-color: #000;
+        background-image: url("../images/bg.png");
+        margin: 2%;
+        padding: 2%;
+        padding-left: 5%;
+        border-radius: 50px;
+        max-width: 50%;
+    }
+
+    .icon {
+        background-color: #000;
+        background-image: url("../images/bg.png");
+        margin: 2%;
+        padding: 2%;
+        margin-left: 20%;
+        padding-left: 5%;
+        border-radius: 50px;
+        max-width: 60%;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        color: #fff;
+    }
+
+    .card {
+        width: 100%;
+        margin: 1%;
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        background-image: url("../images/bg.png");
+        color: #fff;
+        border-radius: 5px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* About page configuration */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 0;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+    }
+
+    .navLinkList {
+        background-color: #000;
+        background-image: url("../images/bg.png");
+        color: white;
+        padding: 10%;
+        margin: 2%;
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .aboutMeDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .meImg {
+        max-width: 100%;
+        border-radius: 20px;
+        margin-right: 1%;
+        border: 2px dotted #353f46;
+    }
+
+    /* Contact page configuration */
+    .icon {
+        background-color: #000;
+        background-image: url("../images/bg.png");
+        margin: 2%;
+        padding: 15%;
+        margin-left: 0;
+        border-radius: 05px;
+        max-width: 100%;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: lighter;
+        color: #fff;
+    }
+
+    .span {
+        font-size: 0.8rem;
+    }
+
+    .sectionA,
+    .sectionB {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
 }
