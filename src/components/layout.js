@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import favicon from "../images/icon.png";
+import favicon from "../images/favicons/favicons.ico";
 import { Helmet } from "react-helmet";
 import {
   heading,
@@ -12,9 +12,6 @@ import {
 } from "./layout.module.css";
 
 const Layout = ({ pageTitle, children, name }) => {
-  <Helmet>
-    <link rel="icon" href={favicon} />
-  </Helmet>;
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -26,6 +23,9 @@ const Layout = ({ pageTitle, children, name }) => {
   `);
   return (
     <div>
+      <Helmet>
+        <link rel="icon" href={favicon} />
+      </Helmet>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkList}>
