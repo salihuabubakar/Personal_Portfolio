@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import favicon from "../images/favicons/favicons.ico";
+import favicon from "../images/favicon.ico";
 import { Helmet } from "react-helmet";
 import {
   heading,
