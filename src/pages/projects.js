@@ -6,7 +6,7 @@ import {
   sectionA,
   sectionB,
   card,
-  reSize,
+  cardImgSize,
   box,
   imgBox,
 } from "../components/layout.module.css";
@@ -18,7 +18,7 @@ const AboutPage = () => {
         <div className={card}>
           <div className={imgBox}>
             <StaticImage
-              className={reSize}
+              className={cardImgSize}
               alt="image-avater"
               src="../images/github.png"
             />
@@ -41,7 +41,7 @@ const AboutPage = () => {
         <div className={card}>
           <div className={imgBox}>
             <StaticImage
-              className={reSize}
+              className={cardImgSize}
               alt="image-avater"
               src="../images/weatherApp.png"
             />
@@ -66,7 +66,7 @@ const AboutPage = () => {
         <div className={card}>
           <div className={imgBox}>
             <StaticImage
-              className={reSize}
+              className={cardImgSize}
               alt="image-avater"
               src="../images/loveApp.png"
             />
@@ -89,7 +89,7 @@ const AboutPage = () => {
         <div className={card}>
           <div className={imgBox}>
             <StaticImage
-              className={reSize}
+              className={cardImgSize}
               alt="image-avater"
               src="../images/qouteBank.png"
             />
