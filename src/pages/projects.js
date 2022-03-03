@@ -43,7 +43,7 @@ const AboutPage = () => {
             <StaticImage
               className={cardImgSize}
               alt="image-avater"
-              src="../images/weatherApp.png"
+              src="../images/weather.png"
             />
           </div>
           <div className={box}>
@@ -68,7 +68,7 @@ const AboutPage = () => {
             <StaticImage
               className={cardImgSize}
               alt="image-avater"
-              src="../images/loveApp.png"
+              src="../images/love.png"
             />
           </div>
           <div className={box}>
@@ -91,7 +91,7 @@ const AboutPage = () => {
             <StaticImage
               className={cardImgSize}
               alt="image-avater"
-              src="../images/qouteBank.png"
+              src="../images/qoute.png"
             />
           </div>
           <div className={box}>
