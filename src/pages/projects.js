@@ -20,7 +20,7 @@ const AboutPage = () => {
             <StaticImage
               className={cardImgSize}
               alt="image-avater"
-              src="../images/github.png"
+              src="../images/hub.png"
             />
           </div>
           <div className={box}>
