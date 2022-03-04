@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/linkedin.png",
+        icon: "src/images/favicon.png",
       },
     },
 
