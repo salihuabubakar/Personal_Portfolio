@@ -157,9 +157,14 @@ ul {
 }
 
 .staticImage {
+    transition: 300ms;
     border-radius: 50%;
     max-width: 20%;
     border: 2px solid #353f46;
+}
+
+.staticImage:hover {
+    transform: rotate(-180deg);
 }
 
 .meImg {
@@ -251,6 +256,10 @@ ul {
 .formDiv input, textarea {
     color: #fff;
     font-weight: 700;
+}
+
+.formDiv input[submit] {
+    color: #000;
 }
 
 
