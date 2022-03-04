@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import favicon from "../images/favicon.ico";
+import favicon from "../images/icon.png";
 import { Helmet } from "react-helmet";
 import {
   heading,
@@ -24,7 +24,7 @@ const Layout = ({ pageTitle, children, name }) => {
   return (
     <div>
       <Helmet>
-        <link rel="icon" href={favicon} />
+        <link rel="icon" type="image/png" href={favicon} />
       </Helmet>
       <nav>
         <ul className={navLinks}>
