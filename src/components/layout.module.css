@@ -248,6 +248,11 @@ ul {
     justify-content: center;
 }
 
+.formDiv input, textarea {
+    color: #fff;
+    
+}
+
 
 /* Madia Queries */
 
