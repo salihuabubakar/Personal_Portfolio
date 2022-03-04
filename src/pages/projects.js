@@ -101,7 +101,7 @@ const AboutPage = () => {
               just a button click
             </p>
             <a
-              href="https://www.linkedin.com/in/salihu-abubakar-177086201/"
+              href="https://qut-api.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
             >
