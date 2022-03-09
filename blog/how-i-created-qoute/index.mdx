@@ -1,39 +1,28 @@
 ---
-title: "How I Created Random Qouting App With an api"
-date: "2022-03-04"
-hero_image: "./qoute.png"
-hero_image_alt: "Qoute-Screenshot"
-hero_image_credit_text: "Salihu K"
-hero_image_credit_link: "https://qut-api.netlify.app"
+title: "Link with target='blank' and rel='noopener noreferrer'"
+date: "2022-03-09"
+hero_image: "./anchor.png"
+hero_image_alt: "Avater-img"
+hero_image_credit_text: " ALEX CHRIS"
+hero_image_credit_link: "#"
 ---
 
-<!-- Inline Code Block -->
-`<p>Hi, everyone, all excited for today's tutorial, let jump right into it! </p>`
-
-For us to be able to generate qoutes randomly, we need to use a ramdon qoute (Application Programming Interface) api
-from  *Rapid Api*.
+So React developer tool warned me against using `target='_blank'` without `rel='noopener noreferrer'` 
+in my react app due to security reasons.
+Essentially, adding `rel='noopener noreferrer'` to links protects your site's users against having the site you've linked to potentially hijacking the browser.
+Adding it to your external link that's having `target='_blank'` fixies the vulnerability in all major browser.
 
 The syntax of the api is written in Javascript.
 
 <!-- Code Blocks -->
-```javascript
+```html
 
-    fetch(
-    "https://quotes15.p.rapidapi.com/quotes/" + randomQuoteKey + "/",
-    {
-      method: "GET",
-      headers: {
-        "x-rapidapi-host": "quotes15.p.rapidapi.com",
-        "x-rapidapi-key": "366885d6aamsh4e6d68f53039a18p10cb87jsn6a24721668ba",
-      },
-    }
-  )
-    .then((response) => response.json())
-    .then((response) => {console.log(response)})
-    .catch((err) => {
-      console.error(err);
-    });
-};
-
+    <a href="https://testing-link.com target='_blank' rel='noopener noreferrer'" 
 
 ```
+
+
+Both **noopener** and **noreferrer** serves thesame purpose, but as some browsers
+will only accepts either one or the other.
+
+Thanks for reading!!!
