@@ -20,7 +20,7 @@ const AboutPage = () => {
         <div>
           <h3 className={greeting}>Salihu Abubakar Kutiriko, 21</h3>
           <p className={aboutMeText}>
-            I am a creative web professional from <strong>Nigeria</strong> who
+            I am a creative Software Engineer from <strong>Nigeria</strong> who
             designs, develops and writes resourceful web tech blogs. <br />
             Some of my projects can be found in the <strong>
               Projects

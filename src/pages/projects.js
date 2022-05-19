@@ -68,17 +68,17 @@ const AboutPage = () => {
             <StaticImage
               className={cardImgSize}
               alt="image-avater"
-              src="../images/love.png"
+              src="../images/timart.jpg"
             />
           </div>
           <div className={box}>
-            <h1>Love App</h1>
+            <h1>Timart Landing Page</h1>
             <p>
-              This is a web App that Predict's the possible affection couples
-              might have.
+              Timart Bussiness Landing page. <br/>
+              A team work project.
             </p>
             <a
-              href="https://sk-love.netlify.app/"
+              href="https://www.gettimart.com/"
               target="_blank"
               rel="noopener noreferrer"
             >

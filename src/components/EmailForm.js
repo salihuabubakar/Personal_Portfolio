@@ -11,10 +11,13 @@ export const EmailForm = () => {
     e.preventDefault();
 
     emailjs.sendForm("gmail", "my_email_id", e.target, "2_v9Zf9uTf5P8bmGG")
-      .then((result) => { console.log(result.text) },
-        (error) => { console.log(error.text) }
+      .then((result) => { console.log(result.json()) },
+        (error) => { console.log(error.json()) }
       );
       e.target.reset();
+      setTimeout(() => {
+        alert("Thanks, your message is received. We will get back to you ASAP");
+      }, 500);
   };
 
   return (
@@ -27,7 +30,7 @@ export const EmailForm = () => {
       <input type="email" required name="email" />
       <label>Your Message</label>
       <textarea rows="6" required name="message" />
-      <input type="submit" value="Send" />
+      <input style={{cursor: "pointer"}} type="submit" value="Send" />
     </form>
   );
 };

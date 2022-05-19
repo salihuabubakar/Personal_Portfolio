@@ -1,0 +1,65 @@
+---
+title: "Resolving Git Merge Conflict In vscode"
+date: "2022-05-09"
+hero_image: "./merge-conflict.png"
+hero_image_alt: "Avater-img"
+hero_image_credit_text: " LAB 03"
+hero_image_credit_link: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww2.stat.duke.edu%2Fcourses%2FFall19%2Fsta199.001%2Fslides%2Flab-slides%2F03-lab-slides.html&psig=AOvVaw3tlW3OGk9M37TuDWBQncLS&ust=1653076877490000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCOjsorOt7PcCFQAAAAAdAAAAABAU"
+---
+**Note
+* *base branch* === **staging**
+
+* *mybranch* === **conflict-resolve**
+
+We need understanding on key espect known as **base branch** before we can actually resolve git conflicts.
+
+So, **base branch** is actually a repository where we push codes to. 
+
+*Eg*. My company's base branch is named **staging**. All i need to do is to go into the **staging branch**, pull the latest changes and then go back to "mybranch". On **conflict-resolve**,
+which is "mybranch" then i'll perform git merge staging to pull in all the latest changes from the **staging branch** into the **conflict-resolve**.
+
+
+---
+
+Git command example.
+<!-- Code Blocks -->
+<!--```bash -->
+git checkout staging
+git pull
+git checkout conflict-resolve
+git merge staging
+<!--```-->
+
+---
+After successfully executing the commands above, vscode will automatically Open up the **Source Control Tab** and if it doesn't, **ctrl+shift+G** will do the magic for you on *Windows* 
+or, on the left panel of vscode, **click** the next icon below the search icon to Open the **Source Control** .
+
+Locate any file that is having red  (!) exclamation mark, that is the file that need's to be resolved.
+
+![Conflict Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fihatetomatoes.net%2Fgit-merge-conflict-tutorial%2F&psig=AOvVaw3tlW3OGk9M37TuDWBQncLS&ust=1653076877490000&source=images&cd=vfe&ved=2ahUKEwieremxrez3AhWVwoUKHRE4DxoQr4kDegUIARDXAQ)
+
+You can either do one of the followings:
+* Accept Current Change
+    * i.e if your branch has the latest code, then accepting current change is for you.
+* Accept incoming Change
+    * i.e if your branch has the outdated code, then accepting incoming change is for you.
+* Accept Both Changes
+    * i.e if you are not too sure or both codes are needed, then you can decide to keep both changes.
+* Compare Changes
+
+After merge resolved. commit your changes and then push back to **base branch**
+
+---
+
+Git command example.
+<!-- Code Blocks -->
+<!--```bash -->
+git commit -m "git resolve"
+git push
+<!--```-->
+
+---
+On git pushing, if --upstream is not setup, instruction on how to set it up will be provided on your terminal, all you need to do is to copy and paste it to run, and then you  **git push** again.
+
+
+Thanks for reading!!!
