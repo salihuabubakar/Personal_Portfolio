@@ -68,7 +68,7 @@ const AboutPage = () => {
             <StaticImage
               className={cardImgSize}
               alt="image-avater"
-              src="../images/timart.jpg"
+              src="../images/timart.png"
             />
           </div>
           <div className={box}>
