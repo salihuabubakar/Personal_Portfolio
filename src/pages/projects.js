@@ -169,6 +169,33 @@ const AboutPage = () => {
             </a>
           </div>
         </div>
+        <div className={card}>
+          <div className={imgBox}>
+            <StaticImage
+              className={cardImgSize}
+              alt="image-avater"
+              src="../images/newsletter.png"
+            />
+          </div>
+          <div className={box}>
+            <h1>Newsletter Web App</h1>
+            <p>Web app that subscribe users to my newsletter</p>
+            <h2>Technologies/Tools used</h2>
+            <ul>
+              <li>Html</li>
+              <li>css</li>
+              <li>Nodejs</li>
+              <li>express & mailchimp Api</li>
+            </ul>
+            <a
+              href="https://mynewsletter-production.up.railway.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explore
+            </a>
+          </div>
+        </div>
       </div>
       <div className={sectionB}></div>
       <div className={sectionC}></div>
