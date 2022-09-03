@@ -23,7 +23,7 @@ module.exports = {
         description:
           "This is my portfolio, it showcase my all technicall journey",
         background_color: "#fff",
-        theme_color: "#ccc",
+        theme_color: "#fff",
         orientation: "portrait",
         display: "standalone",
       },
