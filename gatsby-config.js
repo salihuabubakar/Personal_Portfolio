@@ -17,10 +17,38 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         start_url: "/",
-        icon: "src/images/favicon.png",
+        icons: [
+          {
+            src: "src/images/maskable192.png",
+            type: "image/png",
+            sizes: "192x192",
+            purpose: "any maskable"
+          },
+          {
+            src: "src/images/me192.png",
+            type: "image/png",
+            sizes: "192x192",
+          },
+          {
+            src: "src/images/me256.png",
+            type: "image/png",
+            sizes: "256x256",
+          },
+          {
+            src: "src/images/me384.png",
+            type: "image/png",
+            sizes: "384x384",
+          },
+          {
+            src: "src/images/me512.png",
+            type: "image/png",
+            sizes: "512x512",
+          },
+        ],
         name: "Personal Portfolio",
         short_name: "My Portfolio",
-        description: "This is my portfolio, it showcase my all technicall journey",
+        description:
+          "This is my portfolio, it showcase my all technicall journey",
         background_color: "#fff",
         theme_color: "#ccc",
         orientation: "portrait",
