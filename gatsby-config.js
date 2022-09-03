@@ -22,7 +22,7 @@ module.exports = {
             src: "src/images/maskable192.png",
             type: "image/png",
             sizes: "192x192",
-            purpose: "any maskable"
+            purpose: "any maskable",
           },
           {
             src: "src/images/me192.png",
@@ -43,6 +43,10 @@ module.exports = {
             src: "src/images/me512.png",
             type: "image/png",
             sizes: "512x512",
+          },
+          {
+            src: "src/images/favicon.png",
+            type: "image/png",
           },
         ],
         name: "Personal Portfolio",
