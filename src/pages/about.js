@@ -18,7 +18,7 @@ const AboutPage = () => {
           src="../images/me.jpg"
         />
         <div>
-          <h3 className={greeting}>Salihu Abubakar Kutiriko, 21</h3>
+          <h3 className={greeting}>Salihu Abubakar Kutiriko</h3>
           <p className={aboutMeText}>
             I am a creative Web Developer from <strong>Nigeria</strong> who
             designs, develops and writes resourceful tech blogs. <br/>
